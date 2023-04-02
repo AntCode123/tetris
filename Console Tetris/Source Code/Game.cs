@@ -18,7 +18,7 @@ namespace Tetris
             {
                 for (int j = 0; j < this.width + 2; j++)
                 {
-                    if (field.grid[i][j] == 1)
+                    if (field.Grid[i][j] == 1)
                     {
                         this.posTaken.Add(new List<int> { j, i });
                     }
@@ -32,7 +32,7 @@ namespace Tetris
             {
                 for (int j = 0; j < game.width + 2; j++)
                 {
-                    switch (field.grid[i][j])
+                    switch (field.Grid[i][j])
                     {
                         case 0:
                             Console.SetCursorPosition(j, i);
@@ -147,6 +147,5 @@ namespace Tetris
             Thread.Sleep(this.timeInterval);
             Console.Clear();
         }
-
     }
 }

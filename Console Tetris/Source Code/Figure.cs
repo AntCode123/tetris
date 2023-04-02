@@ -10,7 +10,7 @@ namespace Tetris
         public List<int> centreRotation = new();
         public List<char> letters = new List<char> { 'I', 'L', 'J', 'S', 'Z', 'T', 'O' };
         public void Add(Game game)
-        {
+        { 
             // adding a shape to the field
             this.shape.Clear();
             Random rand = new();
